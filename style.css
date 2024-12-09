@@ -33,6 +33,7 @@ header {
   z-index: 1000;
 }
 
+/*  THE MENU BAR DECO STARTS HERE */
 /* This menu-bar-check will display block on a smaller screen */
 #menu-bar-check {
   position: fixed;
@@ -118,3 +119,40 @@ header {
   background-color: darkgray;
   transform: translateY(-7px) rotate(45deg);
 }
+/*  THE MENU BAR DECO ENDS HERE */
+
+
+/* DECORATION OF THE LOGO STARTS HERE */
+.logo-container {
+  border-top: 2px solid darkgray;
+  border-bottom: 2px solid darkgray;
+  transition: .4s;
+}
+
+.logo-container:hover {
+  border-top: 2px solid steelblue;
+  border-bottom: 2px solid steelblue;
+}
+
+.logo {
+  margin: 0 40px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: 1px;
+  transition: .4s;
+}
+
+.logo a {
+  color: steelblue;
+}
+
+.logo a .logo-span {
+  margin-left: -7px;
+  color: darkgray;
+}
+
+.logo-container:hover > .logo {
+  opacity: .7;
+}
+/* DECORATION OF THE LOGO ENDS HERE */
