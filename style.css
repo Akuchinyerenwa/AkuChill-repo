@@ -16,6 +16,7 @@ body {
   right: 40px;
   top: 20px;
   z-index: 1100;
+  opacity: 1;
 }
 
 header {
@@ -26,7 +27,94 @@ header {
   height: 50px;
   background-color: #0c0202;
   padding-right: 40px;
+  text-transform: uppercase;
   display: flex;
   align-items: center;
   z-index: 1000;
+}
+
+/* This menu-bar-check will display block on a smaller screen */
+#menu-bar-check {
+  position: fixed;
+  left: 39px;
+  top: 6px;
+  width: 38px;
+  height: 38px;
+  z-index: 1100;
+  opacity: 0;
+  display: none;
+}
+
+/* This menu-bar will display flex on a smaller screen */
+.menu-bar {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(169, 169, 169, 0.3);
+  border-radius: 10px;
+  margin-left: 40px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  transition: .4s;
+}
+
+#menu-bar-check:hover ~ .menu-bar,
+#menu-bar-check:checked ~ .menu-bar {
+  border: 1px solid darkgray;
+}
+
+.menu-line {
+  width: 28px;
+  height: 4px;
+  background-color: rgba(169, 169, 169, 0.3);
+  border-radius: 3px;
+  transition: .4s;
+}
+
+.menu-line::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  width: inherit;
+  height: inherit;
+  background-color: rgba(169, 169, 169, 0.3);
+  border-radius: inherit;
+  transition: .4s;
+}
+
+.menu-line::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  width: inherit;
+  height: inherit;
+  background-color: rgba(169, 169, 169, 0.3);
+  border-radius: inherit;
+  transition: .4s;
+}
+
+.menu-bar:hover {
+  transform: scale(0.95);
+  border: 1px solid darkgray;
+}
+
+#menu-bar-check:hover ~ .menu-bar > .menu-line,
+#menu-bar-check:hover ~ .menu-bar > .menu-line::before,
+#menu-bar-check:hover ~ .menu-bar > .menu-line::after {
+  background-color: darkgray;
+}
+
+#menu-bar-check:checked ~ .menu-bar > .menu-line {
+  background-color: transparent;
+}
+
+#menu-bar-check:checked ~ .menu-bar > .menu-line::before {
+  background-color: darkgray;
+  transform: translateY(7px) rotate(-45deg);
+}
+
+#menu-bar-check:checked ~ .menu-bar > .menu-line::after {
+  background-color: darkgray;
+  transform: translateY(-7px) rotate(45deg);
 }
