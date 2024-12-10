@@ -124,8 +124,13 @@ header {
 
 /* DECORATION OF THE LOGO STARTS HERE */
 .logo-container {
+  flex: 1;
   border-top: 2px solid darkgray;
   border-bottom: 2px solid darkgray;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: .4s;
 }
 
@@ -135,10 +140,10 @@ header {
 }
 
 .logo {
-  margin: 0 40px;
   font-size: 1.5rem;
   font-weight: 800;
   font-style: italic;
+  text-shadow: 1px 1px 2px #712626;
   letter-spacing: 1px;
   transition: .4s;
 }
@@ -156,3 +161,12 @@ header {
   opacity: .7;
 }
 /* DECORATION OF THE LOGO ENDS HERE */
+
+.nav-bar {
+  flex: 4;
+  height: 27px;
+  background-color: darkgray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
