@@ -13,10 +13,13 @@ body {
 
 #mode-check {
   position: fixed;
-  right: 40px;
-  top: 20px;
+  right: 41px;
+  top: 8px;
+  height: 34px;
+  width: 38px;
+  cursor: pointer;
   z-index: 1100;
-  opacity: 1;
+  opacity: 0;
 }
 
 header {
@@ -162,6 +165,7 @@ header {
 }
 /* DECORATION OF THE LOGO ENDS HERE */
 
+/* DECORATION OF THE HEADER NAV BAR STARTS HERE */
 .nav-bar {
   flex: 4;
   height: 27px;
@@ -250,3 +254,59 @@ header {
   border-bottom: 2px solid steelblue;
   transform: translateY(3px) rotate(-45deg);
 }
+/* Still have some dropdowns to fix from here */
+/* DECORATION OF THE HEADER NAV BAR ENDS HERE */
+
+/* DECORATION OF THE MODE SWITCH STARTS HERE */
+.mode-switch {
+  height: 28px;
+  width: 40px;
+  border: 2px solid #712626;
+  border-radius: 10px;
+  outline: 4px solid darkgray;
+  background-color: darkgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.mode-switch p {
+  font-size: .6rem;
+  font-weight: 600;
+  transition: .5s;
+}
+
+.light-mode {
+  color: #712626;
+  display: block;
+}
+
+.dark-mode {
+  color: darkgray;
+  display: none;
+}
+
+#mode-check:hover ~ header > .mode-switch {
+  border: 2px solid aliceblue;
+}
+
+#mode-check:hover ~ header > .mode-switch > p {
+  color: #712626;
+  transform: scaleX(.95);
+}
+
+#mode-check:checked ~ header > .mode-switch {
+  background-color: #0c0202;
+  border: 2px solid #712626;
+}
+
+#mode-check:checked ~ header > .mode-switch > .light-mode {
+  display: none;
+}
+
+#mode-check:checked ~ header > .mode-switch > .dark-mode {
+  display: block;
+}
+/* DECORATION OF THE MODE SWITCH ENDS HERE */
