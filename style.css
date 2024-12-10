@@ -170,3 +170,35 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+
+.log-sign {
+  width: 150px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.log-sign a {
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 3px 8px;
+  background-color: #712626;
+  color: darkgray;
+  border: 2px solid darkgray;
+  border-radius: 10px;
+  transition: .4s;
+}
+
+.sign-up:hover {
+  background-color: steelblue;
+  color: #0c0202;
+  border: 2px solid #0c0202;
+  opacity: .7;
+}
+
+.sign-in:hover {
+  background-color: darkgray;
+  color: #712626;
+  border: 2px solid #712626;
+  opacity: .7;
+}
