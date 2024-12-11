@@ -232,6 +232,57 @@ header {
   animation: left-flow2 .4s linear .3s backwards;
 }
 
+/* THIS IS FOR DEVICE LOG SIGN */
+#log-sign-check {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  opacity: .0;
+  display: none;
+  z-index: 2000;
+}
+
+.device-log-sign-container {
+  position: relative;
+  height: 100%;
+  width: 22px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: .5s;
+}
+
+.log-sign-head {
+  width: 8px;
+  height: 8px;
+  background-color: #06065f;
+  border-radius: 50%;
+  transition: .5s;
+}
+
+.log-sign-body {
+  width: 20px;
+  height: 8px;
+  background-color: #06065f;
+  margin-top: 1px;
+  border-radius: 7px 7px 0 0;
+  transition: .5s;
+}
+
+.log-sign-arrow {
+  position: absolute;
+  right: -6px;
+  top: 14px;
+  width: 5px;
+  height: 5px;
+  border-left: 2px solid #06065f;
+  border-bottom: 2px solid #06065f;
+  transform: rotate(-45deg);
+  transition: .5s;
+}
+/* ---------------------------------------- */
+
 .log-sign {
   flex: 1;
   min-width: 140px;
@@ -434,6 +485,49 @@ header {
 
   .nav-dropdown:hover > .nav-list-arrow {
     transform: translateX(15px) rotate(-135deg);
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-bar {
+    flex: 1;
+    justify-content: center;
+  }
+
+  #log-sign-check {
+    display: block;
+  }
+
+  .device-log-sign-container {
+    display: flex;
+  }
+
+  #log-sign-check:checked ~ .device-log-sign-container > .log-sign-head,
+  #log-sign-check:checked ~ .device-log-sign-container > .log-sign-body {
+    background-color: #712626;
+  }
+
+  #log-sign-check:checked ~ .device-log-sign-container > .log-sign-arrow {
+    border-left: 2px solid #712626;
+    border-bottom: 2px solid #712626;
+    transform: rotate(135deg);
+  }
+
+  .log-sign {
+    position: absolute;
+    top: 50px;
+    right: -200%;
+    flex-direction: column;
+    gap: 10px;
+    background-color: darkgray;
+    padding: 10px;
+    transition: .5s;
+  }
+
+  #log-sign-check:checked ~ .log-sign {
+    top: 50px;
+    right: 10%;
+    opacity: 1;
   }
 }
 /* ----------------------------- */
