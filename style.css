@@ -11,6 +11,7 @@ body {
   background: url(images/Drone.jpg);
 }
 
+/* THIS CHECK INPUT IS FOR MODE SWITCH */
 #mode-check {
   position: fixed;
   right: 41px;
@@ -21,6 +22,57 @@ body {
   z-index: 1100;
   opacity: 0;
 }
+/* ------------------------------------ */
+
+/* THIS AREA FOR ANIMATIONS */
+@keyframes down-flow {
+  0% {
+    transform: translateY(-100%);
+    opacity: .2;
+  }
+
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes left-flow {
+  0% {
+    transform: translateX(-100%);
+    opacity: .2;
+  }
+
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes left-flow2 {
+  0% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes right-flow {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+/* ------------------------ */
 
 header {
   position: sticky;
@@ -34,9 +86,10 @@ header {
   display: flex;
   align-items: center;
   z-index: 1000;
+  animation: down-flow .4s linear;
 }
 
-/*  THE MENU BAR DECO STARTS HERE */
+/*  THIS INPUT CHECK IS FOR MENU BAR */
 /* This menu-bar-check will display block on a smaller screen */
 #menu-bar-check {
   position: fixed;
@@ -49,6 +102,7 @@ header {
   display: none;
 }
 
+/*  THE MENU BAR DECO STARTS HERE */
 /* This menu-bar will display flex on a smaller screen */
 .menu-bar {
   position: relative;
@@ -61,6 +115,7 @@ header {
   align-items: center;
   justify-content: center;
   transition: .4s;
+  animation: left-flow .4s linear .2s backwards;
 }
 
 #menu-bar-check:hover ~ .menu-bar,
@@ -135,6 +190,7 @@ header {
   align-items: center;
   justify-content: center;
   transition: .4s;
+  animation: left-flow .4s linear .2s backwards;
 }
 
 .logo-container:hover {
@@ -173,6 +229,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  animation: left-flow2 .4s linear .3s backwards;
 }
 
 .log-sign {
@@ -192,6 +249,7 @@ header {
   border: 2px solid darkgray;
   border-radius: 10px;
   transition: .4s;
+  animation: left-flow .4s linear .4s backwards;
 }
 
 .sign-up:hover {
@@ -215,6 +273,7 @@ header {
   justify-content: space-evenly;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: .9rem;
+  transition: .5s;
 }
 
 .nav-bar .nav-list,
@@ -223,6 +282,7 @@ header {
   cursor: pointer;
   line-height: 22px;
   transition: .4s;
+  animation: left-flow .4s linear .5s backwards;
 }
 
 .nav-bar .nav-list:hover {
@@ -264,12 +324,13 @@ header {
   border: 2px solid #712626;
   border-radius: 10px;
   outline: 4px solid darkgray;
-  background-color: darkgray;
+  background-color: lightgray;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: .5s;
+  animation: left-flow2 .4s linear .7s backwards;
 }
 
 .mode-switch p {
@@ -310,3 +371,69 @@ header {
   display: block;
 }
 /* DECORATION OF THE MODE SWITCH ENDS HERE */
+
+/* THIS AREA IS FOR MEDIA QUERRY */
+@media (max-width: 940px) {
+  body {
+    background: url(images/EufaCup.jpg);
+    background-position: center top;
+  }
+
+  #menu-bar-check {
+    display: block;
+  }
+
+  .menu-bar {
+    display: flex;
+  }
+
+  .nav-bar {
+    flex: 3;
+    justify-content: flex-end;
+  }
+
+  .log-sign {
+    max-width: 250px;
+  }
+
+  .nav-ul {
+    position: absolute;
+    top: 50px;
+    left: -100%;
+    background-color: rgba(12, 2, 2, 0.7);
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  #menu-bar-check:checked ~ .nav-bar > .nav-ul {
+    left: 0;
+  }
+
+  .nav-bar .nav-list {
+    padding: 10px 20px;
+    border-bottom: 2px solid darkgray;
+  }
+
+  .nav-bar .nav-list,
+  .nav-bar .nav-list a {
+    color: aliceblue;
+    line-height: 20px;
+  }
+
+  .nav-dropdown {
+    justify-content: space-between;
+  }
+
+  .nav-list-arrow {
+    height: 6px;
+    width: 6px;
+    border-left: 2px solid aliceblue;
+    border-bottom: 2px solid aliceblue;
+    transform: translateX(10px) rotate(-135deg);
+  }
+
+  .nav-dropdown:hover > .nav-list-arrow {
+    transform: translateX(15px) rotate(-135deg);
+  }
+}
+/* ----------------------------- */
