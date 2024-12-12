@@ -478,6 +478,66 @@ main {
   color: aliceblue;
 }
 
+/* HERE BEGINS THE MAIN ASIDE DECORATION */
+.main-aside {
+  position: fixed;
+  left: 0;
+  width: 20%;
+  height: calc(100vh - 50px);
+  padding: 20px 10px;
+  font-size: .85rem;
+  box-shadow: 0 1px 4px #06065f;
+  background: url(images/GuiterBuildingDesign.png) center rgba(113, 38, 38, 0.7);
+  background-size: cover;
+  background-blend-mode: color;
+  color: aliceblue;
+  text-shadow: 1px 1px 4px black;
+  transition: .6s;
+}
+
+#mode-check:checked ~ main > .main-aside {
+  background: url(images/GuiterBuildingDesign.png) center rgba(12, 2, 2, 0.8);
+  background-size: cover;
+  background-blend-mode: darken;
+  color: darkgray;
+}
+
+.main-aside figure {
+  width: 40%;
+  margin: auto;
+  font-size: .8rem;
+}
+
+.main-aside figure img {
+  width: 80%;
+  border-radius: 50%;
+  border: 2px solid #0c0202;
+  outline: 2px solid darkgray;
+  display: block;
+  margin: auto;
+}
+
+.main-aside figure figcaption {
+  margin-top: 3px;
+  color: darkgray;
+}
+
+.main-aside p {
+  margin-top: 10px;
+  line-height: .95rem;
+  letter-spacing: 1px;
+}
+
+.main-aside p a {
+  color: #06065f;
+  text-shadow: 1px 1px 4px aliceblue;
+}
+
+.main-aside p a:hover {
+  color: #712626;
+}
+/* HERE ENDS THE MAIN ASIDE DECORATION */
+
 /* THIS AREA IS FOR MEDIA QUERRY */
 @media (max-width: 940px) {
   body {
