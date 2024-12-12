@@ -89,6 +89,10 @@ header {
   animation: down-flow .4s linear;
 }
 
+#mode-check:checked ~ header {
+  border-bottom: 1px solid aliceblue;
+}
+
 /*  THIS INPUT CHECK IS FOR MENU BAR */
 /* This menu-bar-check will display block on a smaller screen */
 #menu-bar-check {
@@ -462,6 +466,18 @@ header {
 }
 /* DECORATION OF THE MODE SWITCH ENDS HERE */
 
+main {
+  width: 100%;
+  min-height: calc(100vh - 50px);
+  background-color: rgba(169, 169, 169, 0.88);
+  transition: .6s;
+}
+
+#mode-check:checked ~ main {
+  background-color: rgba(4, 9, 14, 0.88);
+  color: aliceblue;
+}
+
 /* THIS AREA IS FOR MEDIA QUERRY */
 @media (max-width: 940px) {
   body {
@@ -568,6 +584,7 @@ header {
     flex-direction: column;
     gap: 10px;
     background-color: darkgray;
+    box-shadow: 1px 1px 6px #0c0202;
     padding: 10px;
     pointer-events: none;
     transition: .5s;
