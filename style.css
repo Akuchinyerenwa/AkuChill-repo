@@ -346,6 +346,7 @@ header {
 }
 
 .nav-dropdown {
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -365,7 +366,45 @@ header {
   border-bottom: 2px solid steelblue;
   transform: translateY(3px) rotate(-45deg);
 }
-/* Still have some dropdowns to fix from here */
+
+.nav-dropdown .dropdown-ul {
+  position: absolute;
+  top: 100%;
+  left: -20%;
+  list-style: none;
+  transform: translateY(15px);
+  opacity: 0;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.nav-dropdown:hover > .dropdown-ul {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.nav-dropdown .dropdown-ul .dropdown-list {
+  width: 165px;
+  padding: 5px 10px;
+  background-color: steelblue;
+  border-bottom: 1px solid darkgray;
+  transition: .4s;
+}
+
+.nav-dropdown .dropdown-ul .dropdown-list:hover {
+  background-color: #06065f;
+  border-bottom: 1px solid #712626;
+}
+
+.nav-dropdown .dropdown-ul .dropdown-list a {
+  color: #06065f;
+  transition: .4s;
+}
+
+.nav-dropdown .dropdown-ul .dropdown-list:hover > a {
+  color: steelblue;
+}
 /* DECORATION OF THE HEADER NAV BAR ENDS HERE */
 
 /* DECORATION OF THE MODE SWITCH STARTS HERE */
