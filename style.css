@@ -548,6 +548,86 @@ main {
 }
 /* ------------------------------------------ */
 
+.main-animation {
+  position: fixed;
+  top: 52px;
+  left: 20%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  font-size: 1.15rem;
+  font-weight: 600;
+  border-radius: 0 5px 5px 0;
+  box-shadow: 2px 2px 4px aliceblue;
+  background-color: rgba(6, 6, 95, 0.7);
+  padding: 2px 0;
+}
+
+.time {
+  width: 32%;
+  height: 100%;
+  background-color: rgba(113, 38, 38, 0.6);
+  color: darkgray;
+  text-align: center;
+}
+
+.text-animation {
+  width: 68%;
+  font-family: cursive;
+  text-align: center;
+  color: #712626;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px aliceblue;
+  letter-spacing: 1px;
+}
+
+.search-input {
+  position: fixed;
+  top: 100px;
+  right: 30px;
+  width: 27%;
+}
+
+.search-input input {
+  width: 75%;
+  height: 25px;
+  font-size: inherit;
+  padding: 0 10px;
+  border: 1px solid #712626;
+  outline: none;
+  border-radius: 10px 0 0 10px;
+  background-color: rgba(113, 38, 38, 0.6);
+  transition: .4s;
+}
+
+.search-input input:focus {
+  background-color: lightgray;
+  box-shadow: 0 2px 4px aliceblue;
+}
+
+.search-input button {
+  height: 25px;
+  font-size: .9rem;
+  font-weight: 600;
+  padding: 0 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 0 10px 10px 0;
+  border: none;
+  background-color: #712626;
+  color: darkgray;
+  transition: .4s;
+}
+
+.search-input button:hover {
+  color: aliceblue;
+}
+
+.search-input button:active {
+  color: #0c0202;
+  box-shadow: 2px 2px 4px aliceblue;
+}
+
 /* HERE BEGINS THE MAIN ASIDE DECORATION */
 .main-aside {
   position: fixed;
