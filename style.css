@@ -467,6 +467,7 @@ header {
 /* DECORATION OF THE MODE SWITCH ENDS HERE */
 
 main {
+  position: relative;
   width: 100%;
   min-height: calc(100vh - 50px);
   background-color: rgba(169, 169, 169, 0.88);
@@ -477,6 +478,75 @@ main {
   background-color: rgba(4, 9, 14, 0.88);
   color: lightgray;
 }
+
+/* THIS CHECK INPUT AND DIV IS FOR MAIN ASIDE */
+#profile-check, .profile-container {
+  position: fixed;
+}
+
+#profile-check {
+  top: 77px;
+  left: 6px;
+  width: 36px;
+  height: 36px;
+  display: none;
+  cursor: pointer;
+  z-index: 500;
+  opacity: 0;
+}
+
+.profile-container {
+  top: 80px;
+  left: 5px;
+  height: 30px;
+  width: 38px;
+  border-radius: 4px;
+  font-size: .68rem;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 1px 1px 2px aliceblue;
+  line-height: .62rem;
+  background-color: rgba(169, 169, 169, 0.6);
+  color: #712626;
+  box-shadow: 0 1px 3px #06065f;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.show {
+  display: block;
+  transition: .5s;
+}
+
+.hide {
+  display: none;
+  transition: .5s;
+}
+
+.profile-arrow {
+  width: 5px;
+  height: 5px;
+  margin-top: 2px;
+  border-right: 2px solid #712626;
+  border-bottom: 2px solid #712626;
+  transform: rotate(-45deg);
+  transition: .5s;
+}
+
+#profile-check:checked ~ .profile-container > .show {
+  display: none;
+}
+
+#profile-check:checked ~ .profile-container > .hide {
+  display: block;
+}
+
+#profile-check:checked ~ .profile-container > .profile-arrow {
+  transform: rotate(135deg);
+}
+/* ------------------------------------------ */
 
 /* HERE BEGINS THE MAIN ASIDE DECORATION */
 .main-aside {
@@ -778,6 +848,34 @@ main {
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
+  }
+
+  #profile-check {
+    display: block;
+  }
+  
+  .profile-container {
+    display: flex;
+  }
+
+  .main-aside {
+    left: -100%;
+    width: 70%;
+  }
+
+  #profile-check:checked ~ .main-aside {
+    left: 15%;
+  }
+
+  .main-section {
+    width: 100%;
+    margin-left: 0;
+    padding: 20px;
+    transition: .5s;
+  }
+
+  #profile-check:checked ~ .main-section {
+    opacity: 0;
   }
 }
 /* ----------------------------- */
