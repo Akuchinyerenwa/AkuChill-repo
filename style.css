@@ -847,6 +847,42 @@ main {
     transform: translate(-200%, 0);
   }
 
+  .main-animation {
+    left: 30%;
+    width: 65%;
+    font-size: .85rem;
+    font-weight: 600;
+    line-height: 1.3rem;
+  }
+  
+  .time {
+    width: 30%;
+  }
+  
+  .text-animation {
+    width: 69%;
+    color: aliceblue;
+    text-shadow: 1px 1px 3px #712626;
+  }
+  
+  .search-input {
+    top: 90px;
+    width: 60%;
+  }
+  
+  .search-input input {
+    width: 70%;
+    height: 23px;
+    font-size: .8rem;
+  }
+  
+  .search-input button {
+    width: 28%;
+    height: 23px;
+    font-size: .9rem;
+    font-weight: 600;
+  }
+
   .main-aside {
     width: 30%;
     padding: 10px 5px;
@@ -936,6 +972,16 @@ main {
   
   .profile-container {
     display: flex;
+  }
+
+  .main-animation {
+    left: 0;
+    width: 90%;
+  }
+  
+  .search-input {
+    right: 10px;
+    width: 80%;
   }
 
   .main-aside {
