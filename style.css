@@ -475,7 +475,7 @@ main {
 
 #mode-check:checked ~ main {
   background-color: rgba(4, 9, 14, 0.88);
-  color: aliceblue;
+  color: lightgray;
 }
 
 /* HERE BEGINS THE MAIN ASIDE DECORATION */
@@ -493,6 +493,7 @@ main {
   color: aliceblue;
   text-shadow: 1px 1px 4px black;
   transition: .6s;
+  animation: down-flow .5s linear .2s backwards;
 }
 
 #mode-check:checked ~ main > .main-aside {
@@ -503,13 +504,13 @@ main {
 }
 
 .main-aside figure {
-  width: 40%;
+  width: 100%;
   margin: auto;
-  font-size: .8rem;
+  animation: down-flow .4s linear .5s backwards;
 }
 
 .main-aside figure img {
-  width: 80%;
+  width: 30%;
   border-radius: 50%;
   border: 2px solid #0c0202;
   outline: 2px solid darkgray;
@@ -520,12 +521,15 @@ main {
 .main-aside figure figcaption {
   margin-top: 3px;
   color: darkgray;
+  font-size: .8rem;
+  text-align: center;
 }
 
 .main-aside p {
   margin-top: 10px;
   line-height: .95rem;
   letter-spacing: 1px;
+  animation: down-flow .4s linear .4s backwards;
 }
 
 .main-aside p a {
@@ -537,6 +541,90 @@ main {
   color: #712626;
 }
 /* HERE ENDS THE MAIN ASIDE DECORATION */
+
+.main-section {
+  width: calc(100vw - 20%);
+  margin-left: 20%;
+  padding: 20px 80px;
+}
+
+.main-heading, .main-sub-heading {
+  text-align: center;
+}
+
+.main-heading {
+  margin-top: 70px;
+  text-transform: uppercase;
+  color: #06065f;
+  text-shadow: 2px 2px 3px aliceblue;
+  letter-spacing: 1px;
+  transition: .5s;
+}
+
+#mode-check:checked ~ main > .main-section > .main-heading {
+  color: steelblue;
+  text-shadow: 2px 2px 3px #712626;
+}
+
+.main-sub-heading {
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-style: italic;
+  margin: 5px 0;
+}
+
+.article1 {
+  margin: 30px 0;
+}
+
+.article1 h3 {
+  text-decoration: underline;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 3px aliceblue;
+  transition: .5s;
+}
+
+#mode-check:checked ~ main > .main-section > .article1 > h3 {
+  text-shadow: 1px 1px 2px #712626;
+}
+
+.article1 p {
+  margin: 0 0 10px 15px;
+}
+
+.mini-articles {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.mini-articles div {
+  width: 28%;
+  padding: 10px;
+  box-shadow: 0px 2px 6px #712626;
+  border-radius: 5px;
+}
+
+.mini-articles div figure {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.mini-articles div figure img {
+  width: 100%;
+  border: 2px solid darkgray;
+  border-radius: 10px;
+  outline: 2px solid #0c0202;
+}
+
+.mini-articles div figure figcaption {
+  font-size: .88rem;
+}
+
+.mini-articles div p {
+  text-align: center;
+  margin-bottom: 5px;
+}
 
 /* THIS AREA IS FOR MEDIA QUERRY */
 @media (max-width: 940px) {
@@ -607,6 +695,40 @@ main {
     top: 0;
     left: 100%;
     transform: translate(-200%, 0);
+  }
+
+  .main-aside {
+    width: 30%;
+    padding: 10px 5px;
+    font-size: .8rem;
+    text-align: center;
+  }
+
+  .main-aside figure img {
+    width: 25%;
+    border: 1px solid #0c0202;
+    outline: 1px solid darkgray;
+  }
+
+  .main-aside figure figcaption {
+    font-size: .7rem;
+  }
+
+  .main-section {
+    width: calc(100vw - 30%);
+    margin-left: 30%;
+    padding: 20px;
+  }
+
+  .mini-articles {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .mini-articles div {
+    width: 80%;
+    padding: 10px;
   }
 }
 
