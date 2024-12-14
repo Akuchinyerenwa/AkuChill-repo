@@ -778,6 +778,7 @@ article h3 {
 
 .article-list {
   margin: 30px 0;
+  animation: down-flow .5s linear .2s backwards;
 }
 
 .article-list ul {
@@ -797,7 +798,35 @@ article h3 {
 .main-conclusion {
   text-align: center;
   color: #712626;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
+  animation: down-flow .5s linear .2s backwards;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(6, 6, 95, 0.8);
+  text-shadow: 0 1px 3px aliceblue;
+  font-size: .8rem;
+  line-height: 2rem;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: left-flow .5s linear .3s backwards;
+}
+
+.footer-anchor {
+  color: darkgray;
+  text-shadow: 0 1px 3px #712626;
+  font-style: italic;
+  transition: .4s;
+  animation: down-flow .5s linear .5s backwards;
+}
+
+.footer-anchor:hover {
+  color: aliceblue;
 }
 
 /* THIS AREA IS FOR MEDIA QUERRY */
