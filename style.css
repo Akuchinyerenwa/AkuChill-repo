@@ -723,7 +723,7 @@ main {
   margin: 30px 0;
 }
 
-.article1 h3 {
+article h3 {
   text-decoration: underline;
   margin-bottom: 10px;
   text-shadow: 1px 1px 3px aliceblue;
@@ -731,7 +731,7 @@ main {
   animation: down-flow .5s linear .4s backwards;
 }
 
-#mode-check:checked ~ main > .main-section > .article1 > h3 {
+#mode-check:checked ~ main > .main-section > article > h3 {
   text-shadow: 1px 1px 2px #712626;
 }
 
@@ -774,6 +774,30 @@ main {
 .mini-articles div p {
   text-align: center;
   margin-bottom: 5px;
+}
+
+.article-list {
+  margin: 30px 0;
+}
+
+.article-list ul {
+  list-style-position: inside;
+}
+
+.article-list ul li {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.article-list ul li p {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.main-conclusion {
+  text-align: center;
+  color: #712626;
+  margin-bottom: 60px;
 }
 
 /* THIS AREA IS FOR MEDIA QUERRY */
