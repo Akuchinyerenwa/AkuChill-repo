@@ -28,7 +28,7 @@ body {
 @keyframes down-flow {
   0% {
     transform: translateY(-100%);
-    opacity: .2;
+    opacity: 0;
   }
 
   100% {
@@ -40,18 +40,6 @@ body {
 @keyframes left-flow {
   0% {
     transform: translateX(-100%);
-    opacity: .2;
-  }
-
-  100% {
-    transform: translate(0);
-    opacity: 1;
-  }
-}
-
-@keyframes left-flow2 {
-  0% {
-    transform: translateX(-50%);
     opacity: 0;
   }
 
@@ -233,7 +221,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  animation: left-flow2 .4s linear .3s backwards;
+  animation: left-flow .4s linear .3s backwards;
 }
 
 /* THIS IS FOR DEVICE LOG SIGN */
@@ -424,7 +412,7 @@ header {
   justify-content: center;
   cursor: pointer;
   transition: .5s;
-  animation: left-flow2 .4s linear .7s backwards;
+  animation: left-flow .4s linear .7s backwards;
 }
 
 .mode-switch p {
@@ -482,6 +470,7 @@ main {
 /* THIS CHECK INPUT AND DIV IS FOR MAIN ASIDE */
 #profile-check, .profile-container {
   position: fixed;
+  animation: left-flow .5s linear .2s backwards;
 }
 
 #profile-check {
@@ -552,7 +541,7 @@ main {
   position: fixed;
   top: 52px;
   left: 20%;
-  width: 40%;
+  width: 45%;
   display: flex;
   align-items: center;
   font-size: 1.15rem;
@@ -561,6 +550,7 @@ main {
   box-shadow: 2px 2px 4px aliceblue;
   background-color: rgba(6, 6, 95, 0.7);
   padding: 2px 0;
+  animation: left-flow .5s linear .1s backwards;
 }
 
 .time {
@@ -569,29 +559,33 @@ main {
   background-color: rgba(113, 38, 38, 0.6);
   color: darkgray;
   text-align: center;
+  animation: left-flow .5s linear .3s backwards;
 }
 
 .text-animation {
   width: 68%;
   font-family: cursive;
   text-align: center;
-  color: #712626;
+  color: aliceblue;
   text-transform: uppercase;
-  text-shadow: 1px 1px 3px aliceblue;
+  text-shadow: 1px 1px 3px #712626;
   letter-spacing: 1px;
+  animation: left-flow .5s linear .2s backwards;
 }
 
 .search-input {
   position: fixed;
   top: 100px;
   right: 30px;
-  width: 27%;
+  width: 34%;
+  animation: left-flow .5s linear .3s backwards;
 }
 
 .search-input input {
   width: 75%;
   height: 25px;
-  font-size: inherit;
+  font-family: inherit;
+  font-size: .8rem;
   padding: 0 10px;
   border: 1px solid #712626;
   outline: none;
@@ -607,7 +601,7 @@ main {
 
 .search-input button {
   height: 25px;
-  font-size: .9rem;
+  font-size: .8rem;
   font-weight: 600;
   padding: 0 5px;
   text-transform: uppercase;
@@ -709,6 +703,7 @@ main {
   text-shadow: 2px 2px 3px aliceblue;
   letter-spacing: 1px;
   transition: .5s;
+  animation: down-flow .5s linear .6s backwards;
 }
 
 #mode-check:checked ~ main > .main-section > .main-heading {
@@ -721,6 +716,7 @@ main {
   font-weight: 500;
   font-style: italic;
   margin: 5px 0;
+  animation: down-flow .5s linear .5s backwards;
 }
 
 .article1 {
@@ -732,6 +728,7 @@ main {
   margin-bottom: 10px;
   text-shadow: 1px 1px 3px aliceblue;
   transition: .5s;
+  animation: down-flow .5s linear .4s backwards;
 }
 
 #mode-check:checked ~ main > .main-section > .article1 > h3 {
@@ -740,6 +737,7 @@ main {
 
 .article1 p {
   margin: 0 0 10px 15px;
+  animation: down-flow .5s linear .3s backwards;
 }
 
 .mini-articles {
@@ -753,11 +751,13 @@ main {
   padding: 10px;
   box-shadow: 0px 2px 6px #712626;
   border-radius: 5px;
+  animation: down-flow .5s linear .1s backwards;
 }
 
 .mini-articles div figure {
   width: 100%;
   margin-bottom: 10px;
+  animation: down-flow .5s linear .2s backwards;
 }
 
 .mini-articles div figure img {
@@ -861,8 +861,6 @@ main {
   
   .text-animation {
     width: 69%;
-    color: aliceblue;
-    text-shadow: 1px 1px 3px #712626;
   }
   
   .search-input {
