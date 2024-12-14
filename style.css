@@ -809,6 +809,7 @@ footer {
   background-color: rgba(6, 6, 95, 0.8);
   text-shadow: 0 1px 3px aliceblue;
   font-size: .8rem;
+  font-weight: 700;
   line-height: 2rem;
   letter-spacing: 1px;
   display: flex;
@@ -820,6 +821,7 @@ footer {
 .footer-anchor {
   color: darkgray;
   text-shadow: 0 1px 3px #712626;
+  font-weight: 500;
   font-style: italic;
   transition: .4s;
   animation: down-flow .5s linear .5s backwards;
