@@ -830,6 +830,93 @@ footer {
 .footer-anchor:hover {
   color: aliceblue;
 }
+/* THIS IS THE END OF INDEX.HTML DECORATION */
+
+/* THE DECORATION OF REGISTER.HTML STARTS HERE */
+.register-main {
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+.form-heading {
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration: underline;
+  animation: down-flow .5s linear .3s backwards;
+}
+
+.register-form {
+  width: 60%;
+  margin: 0 auto;
+  background-color: rgba(70, 131, 180, 0.5);
+  box-shadow: 0 2px 6px #0c0202;
+  padding: 20px 40px;
+  border-radius: 10px;
+  animation: down-flow .5s linear;
+}
+
+label {
+  display: inline;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.3rem;
+  display: block;
+  animation: down-flow .5s linear .5s backwards;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+.name {
+  min-height: 30px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  background-color: darkgray;
+  box-shadow: 1px 1px 4px #06065f;
+  display: block;
+  transition: .4s;
+  animation: down-flow .5s linear .3s backwards;
+}
+
+.name:focus, .name:hover {
+  background-color: lightgray;
+}
+
+input[type = submit], input[type = reset] {
+  width: 50%;
+  height: 30px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid #06065f;
+  border-radius: 7px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: .4s;
+}
+
+input[type = reset] {
+  background-color: slategray;
+  animation: down-flow .5s linear .2s backwards;
+}
+
+input[type = submit] {
+  background-color: steelblue;
+  animation: down-flow .5s linear .1s backwards;
+}
+
+input[type = submit]:hover, input[type = reset]:hover {
+  color: #712626;
+  border: 1px solid #06065f;
+}
+/* THE DECORATION OF REGISTER.HTML ENDS HERE */
 
 /* THIS AREA IS FOR MEDIA QUERRY */
 @media (max-width: 940px) {
