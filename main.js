@@ -26,3 +26,18 @@ setInterval(() => {
   }
 }, 2500);
 /* ------------------------------- */
+
+/* THIS IS FOR THE SEARCH INPUT */
+const searchInputEl = document.getElementById("search-input");
+const searchInputBtn = document.getElementById("search-input-btn");
+
+searchInputBtn.addEventListener("click", function () {
+  if (!searchInputEl.value) {
+    alert(`The input field is empty! \nPlease make sure you type something in the box.`);
+  }else {
+    alert(`Sorry third party search blocked!!!  \nSearch for ${searchInputEl.value} cannot be completed \nTry again later please.`);
+  }
+
+  searchInputEl.value = "";
+})
+/* ---------------------------- */
