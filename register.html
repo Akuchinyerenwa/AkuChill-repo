@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="register-main">
+    <form action="/api/v1/registers" method="post" class="register-form">
+      <label for="surname">Surname:</label>
+      <input type="text" name="surname" id="surname" class="name" required placeholder="Scott" minlength="4" maxlength="10">
+
+      <label for="firstName">First Name:</label>
+      <input type="text" name="firstName" id="firstName" class="name" required placeholder="Jacky" minlength="4" maxlength="10">
+      
+      <label for="otherName">Other Name:</label>
+      <input type="text" name="otherName" id="otherName" class="name" placeholder="Normahn" minlength="4" maxlength="10">
+
+      <input type="radio" name="gender" id="male" required>
+      <label for="male">Male</label>
+      
+      <input type="radio" name="gender" id="female" required>
+      <label for="male">Female</label>
+
+      <label for="age">Date of Birth:</label>
+      <input type="date" name="age" id="age" class="age" required>
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" class="name" required>
+
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" class="name" required minlength="8" maxlength="15">
+
+      <input type="reset" class="clear" value="Clear">
+
+      <input type="submit" class="submit" value="Register">
+    </form>
+  </main>
+  
+</body>
+</html>
