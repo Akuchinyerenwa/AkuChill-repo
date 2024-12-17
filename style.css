@@ -1056,6 +1056,12 @@ input[type = submit]:hover, input[type = reset]:hover {
     width: 80%;
     padding: 10px;
   }
+
+  /* MEDIA QUERRY (MAX-WIDTH 940PX) OF REGISTER FORM STARTS HERE */
+  .register-form {
+    width: 80%;
+  }
+  /* MEDIA QUERRY (MAX-WIDTH 940PX) OF REGISTER FORM ENDS HERE */
 }
 
 @media (max-width: 480px) {
@@ -1143,5 +1149,28 @@ input[type = submit]:hover, input[type = reset]:hover {
   #profile-check:checked ~ .main-section {
     opacity: 0;
   }
+  
+  /* MEDIA QUERRY (MAX-WIDTH 480PX) OF REGISTER FORM STARTS HERE */
+  .register-form {
+    padding: 20px;
+  }
+  
+  label {
+    font-size: .95rem;
+  }
+  
+  input {
+    margin-bottom: 10px;
+  }
+  
+  .name {
+    padding: 0 10px;
+    font-size: 1rem;
+  }
+  
+  input[type = submit], input[type = reset] {
+    font-size: 1rem;
+  }
+  /* MEDIA QUERRY (MAX-WIDTH 480PX) OF REGISTER FORM ENDS HERE */
 }
 /* ----------------------------- */
