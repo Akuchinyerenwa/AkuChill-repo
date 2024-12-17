@@ -7,8 +7,31 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="register-main"></main>
+  <main class="register-main">
+    <p>
+      Enter your details below to login to your account:
+    </p>
+
+    <form action="/api/v1/registers" method="get" class="register-form">
+      <label for="surname">Surname:</label>
+      <input type="text" name="surname" id="surname" class="name" required placeholder="Whitt" minlength="4" maxlength="10">
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" class="name" required placeholder="sample@akuchill.net">
+
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" class="name" required minlength="8" maxlength="15">
+
+      <input type="submit" class="submit" value="Enter">
+    </form>
+
+    <p>
+      Don't have an account? <a href="register.html">Sign-Up</a>
+    </p>
+  </main>
   
-  <footer></footer>
+  <footer>
+    &lt;&lt;&lt; <a href="index.html" class="footer-anchor">Home</a> &gt;&gt;&gt;
+  </footer>
 </body>
 </html>
