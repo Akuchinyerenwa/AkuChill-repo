@@ -916,6 +916,29 @@ input[type = submit]:hover, input[type = reset]:hover {
   color: #712626;
   border: 1px solid #06065f;
 }
+
+/* Small page decoration for login.html file is here */
+.register-main p {
+  text-align: center;
+  margin: 30px 20px;
+  font-weight: 600;
+}
+
+.register-main p a {
+  display: inline-block;
+  padding: 2px 5px;
+  background-color: slategray;
+  border-radius: 3px;
+  box-shadow: 0 1px 4px #712626;
+  color: #06065f;
+  transition: .4s;
+}
+
+.register-main p a:hover {
+  background-color: rgba(6, 6, 95, 0.5);
+  box-shadow: 0 1px 4px lightgray;
+  color: #712626;
+}
 /* THE DECORATION OF REGISTER.HTML ENDS HERE */
 
 /* THIS AREA IS FOR MEDIA QUERRY */
