@@ -1,3 +1,3 @@
-# My html, css and js test 1
+# AkuChill Page One
 
-I am working on this to expand my knowledge on html, css, js, git and github
+I am working with html, css and javascript mainly on this project. This is actually my first page that I'm putting html, css and js together.
