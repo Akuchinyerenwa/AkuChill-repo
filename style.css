@@ -864,6 +864,10 @@ label {
   animation: down-flow .5s linear .5s backwards;
 }
 
+label span {
+  color: #712626;
+}
+
 input {
   margin-bottom: 10px;
 }
