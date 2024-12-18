@@ -926,6 +926,7 @@ input[type = submit]:hover, input[type = reset]:hover {
   text-align: center;
   margin: 30px 20px;
   font-weight: 600;
+  animation: down-flow .5s linear .4s backwards;
 }
 
 .register-main p a {
