@@ -941,6 +941,41 @@ input[type = submit]:hover, input[type = reset]:hover {
 }
 /* THE DECORATION OF REGISTER.HTML ENDS HERE */
 
+/* THE DECORATION OF ABOUT.HTML STARTS HERE */
+.about-article {
+  width: 70%;
+  background-color: rgba(250, 235, 215, 0.2);
+  margin: auto;
+  padding: 50px 20px;
+  animation: down-flow .5s linear .1s backwards;
+}
+
+.about-article h2 {
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  animation: down-flow .5s linear .5s backwards;
+}
+
+.about-article p {
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  animation: down-flow .5s linear .3s backwards;
+}
+
+.about-article p a, abbr {
+  color: #06065f;
+  text-shadow: 0 1px 3px aliceblue;
+  transition: .4s;
+}
+
+.about-article p a:hover {
+  color: #712626;
+}
+/* THE DECORATION OF ABOUT.HTML ENDS HERE */
+
 /* THIS AREA IS FOR MEDIA QUERRY */
 @media (max-width: 940px) {
   body {
