@@ -981,6 +981,113 @@ input[type = submit]:hover, input[type = reset]:hover {
 }
 /* THE DECORATION OF ABOUT.HTML ENDS HERE */
 
+/* THE DECORATION OF PROJECTS.HTML STARTS HERE */
+.projects-main {
+  padding: 40px 10%;
+}
+
+.project-heading {
+  width: max-content;
+  margin: auto;
+  padding: 0 15px;
+  line-height: 2.3rem;
+  letter-spacing: 1px;
+  background-color: steelblue;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #06065f;
+}
+
+.projects-intro {
+  margin: 10px 0 20px;
+  text-align: center;
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.project-container a {
+  width: max-content;
+  background-color: rgba(240, 248, 255, 0.3);
+  border-radius: 10px;
+  box-shadow: 0 1px 4px #06065f;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.project-container a:hover {
+  transform: scale(0.97);
+  box-shadow: 2px 2px 6px #06065f;
+}
+
+.sample-header {
+  color: #0c0202;
+  font-weight: 600;
+}
+
+.sample1-input {
+  width: 100%;
+  height: 14px;
+  border: 2px solid #712626;
+  border-radius: 5px;
+  margin: 5px 0 10px;
+  font-size: .6rem;
+  text-align: right;
+  overflow: hidden;
+}
+
+.sample1-btn {
+  width: 30%;
+  height: 100%;
+  background-color: #712626;
+  color: aliceblue;
+  text-align: center;
+  display: inline-block;
+}
+
+.sample1-list {
+  color: #712626;
+  font-style: italic;
+}
+
+.sample2-list {
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 10px 0;
+  color: #06065f;
+  font-weight: 500;
+}
+
+.sample2-input {
+  border: 2px solid #712626;
+  color: #0c0202;
+}
+
+.sample2-input, .sample2-btn {
+  padding: 0 20px;
+  border-radius: 5px;
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.sample2-btn {
+  border: none;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: steelblue;
+  line-height: 1rem;
+  color: #712626;
+  box-shadow: 0 1px 4px #06065f;
+}
+/* THE DECORATION OF PROJECTS.HTML ENDS HERE */
+
 /* THIS AREA IS FOR MEDIA QUERRY */
 @media (max-width: 940px) {
   body {
