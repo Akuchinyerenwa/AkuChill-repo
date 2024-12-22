@@ -1118,6 +1118,161 @@ input[type = submit]:hover, input[type = reset]:hover {
 }
 /* THE DECORATION OF PROJECTS.HTML ENDS HERE */
 
+/* STYLING FOR TODOLIST.HTML STARTS HERE */
+.toDoList-main {
+  min-height: 100vh;
+  background-image: url(images/time-5193038_1280.jpg);
+  background-color: rgba(12, 2, 2, 0.7);
+  background-blend-mode: darken;
+  padding: 30px 50px;
+}
+
+.toDoList-main h2 {
+  width: max-content;
+  background-color: steelblue;
+  padding: 5px 50px;
+  margin: 0 auto 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px #06065f;
+  text-decoration: underline;
+  animation: down-flow .5s linear .7s backwards;
+}
+
+.toDoList-main p {
+  width: 80%;
+  padding: 10px;
+  margin: auto;
+  background-color: rgba(240, 248, 255, 0.6);
+  color: black;
+  text-shadow: 0 1px 3px slategray;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 10px 10px 0 0;
+  animation: down-flow .5s linear .6s backwards;
+}
+
+.toDoList-main input {
+  height: 30px;
+  padding: 0 30px;
+  font-family: inherit;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  display: block;
+}
+
+.toDoList-main input[type = text] {
+  width: 80%;
+  margin: 10px auto;
+  background-color: rgba(12, 2, 2, 0.7);
+  box-shadow: 0 1px 2px steelblue;
+  transition: .4s;
+  animation: down-flow .5s linear .5s backwards;
+}
+
+.toDoList-main input[type = text]:hover, .toDoList-main input[type = text]:focus {
+  background-color: rgba(240, 248, 255, 0.6);
+  box-shadow: 0 1px 6px #06065f;
+}
+
+.toDoList-main input[type = button] {
+  width: 30%;
+  margin: 10px 10% 10px auto;
+  background-color:slategray;
+  box-shadow: 0 1px 4px black;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: .4s;
+  animation: down-flow .5s linear .4s backwards;
+}
+
+.toDoList-main input[type = button]:hover {
+  background-color:rgb(145, 163, 182);
+  color: #712626;
+  box-shadow: 0 1px 4px #712626;
+}
+
+.toDoList-main ul {
+  width: 80%;
+  min-height: 45vh;
+  background-color: rgb(145, 163, 182);
+  margin: auto;
+  padding: 10px 20px;
+  font-family: cursive, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  animation: down-flow .5s linear .3s backwards;
+}
+
+.toDoList-main ul li {
+  position: relative;
+  margin-bottom: 5px;
+  list-style: circle inside;
+  color: black;
+  cursor: default;
+  transition: .4s;
+  animation: down-flow .5s linear .3s backwards;
+}
+
+.toDoList-main ul .done {
+  list-style: disc inside;
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: line-through;
+}
+
+.toDoList-main ul li span {
+  position: absolute;
+  right: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: aliceblue;
+  color: #871b1b;
+  padding: 0 3px 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.toDoList-main ul li span:hover {
+  background-color: rgba(240, 248, 255, 0.6);
+}
+
+.toDoList-main div {
+  width: 81%;
+  padding: 10px 30px;
+  margin: auto;
+  background-color: rgba(12, 2, 2, 0.9);
+  border-radius: 0 0 10px 10px;
+  color: steelblue;
+  font-weight: 600;
+  animation: down-flow .5s linear .1s backwards;
+}
+
+.toDoList-main div span {
+  animation: left-flow .5s linear .4s backwards;
+}
+
+.toDoList-main div a {
+  padding: 5px 20px;
+  background-color: steelblue;
+  color: #0c0202;
+  border: 2px solid #0c0202;
+  border-radius: 10px;
+  opacity: .8;
+  cursor: pointer;
+  transition: .4s;
+  animation: left-flow .5s linear .2s backwards;
+}
+
+.toDoList-main div a:hover {
+  opacity: 1;
+}
+/* STYLING FOR TODOLIST.HTML ENDS HERE */
+
 /* THIS AREA IS FOR MEDIA QUERRY */
 @media (max-width: 940px) {
   body {
