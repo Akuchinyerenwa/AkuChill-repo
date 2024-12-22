@@ -1138,8 +1138,11 @@ input[type = submit]:hover, input[type = reset]:hover {
   animation: down-flow .5s linear .7s backwards;
 }
 
-.toDoList-main p {
+.toDoList-main p, .toDoList-main input[type = text], .toDoList-main ul {
   width: 80%;
+}
+
+.toDoList-main p {
   padding: 10px;
   margin: auto;
   background-color: rgba(240, 248, 255, 0.6);
@@ -1164,7 +1167,6 @@ input[type = submit]:hover, input[type = reset]:hover {
 }
 
 .toDoList-main input[type = text] {
-  width: 80%;
   margin: 10px auto;
   background-color: rgba(12, 2, 2, 0.7);
   box-shadow: 0 1px 2px steelblue;
@@ -1197,7 +1199,6 @@ input[type = submit]:hover, input[type = reset]:hover {
 }
 
 .toDoList-main ul {
-  width: 80%;
   min-height: 45vh;
   background-color: rgb(145, 163, 182);
   margin: auto;
@@ -1532,5 +1533,23 @@ input[type = submit]:hover, input[type = reset]:hover {
     font-size: 1rem;
   }
   /* MEDIA QUERRY (MAX-WIDTH 480PX) OF REGISTER FORM ENDS HERE */
+  /* MEDIA QUERRY (MAX-WIDTH 480PX) OF TO DO LIST STARTS HERE */
+  .toDoList-main {
+    padding: 30px 10px;
+  }
+
+  .toDoList-main p, .toDoList-main input[type = text], .toDoList-main ul {
+    width: 90%;
+  }
+  
+  .toDoList-main input[type = button] {
+    width: 60%;
+    margin: 10px auto;
+  }
+  
+  .toDoList-main div {
+    width: 91%;
+  }
+  /* MEDIA QUERRY (MAX-WIDTH 480PX) OF TO DO LIST ENDS HERE */
 }
 /* ----------------------------- */
