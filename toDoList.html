@@ -7,9 +7,20 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="toDoList-main"></main>
-
-  <footer></footer>
+  <main class="toDoList-main">
+    <h2>To Do List</h2>
+    <p>
+      This page allows you to make the list of things you want to do.
+      <br>Please type your list in the box below and click the "Add List" button.
+    </p>
+    <input type="text" name="toDoList-input" id="toDoList-input" placeholder="Type here...">
+    <input type="button" id="toDoList-btn" value="Add List">
+    <ul id="toDoList-ul">
+      <li class="undone">This is an undone list <span>x</span></li>
+      <li class="done">This is a done list <span>x</span></li>
+    </ul>
+    <a href="projects.html"><span>&lt;&lt;</span> Back</a>
+  </main>
   
   <script src="main.js"></script>
 </body>
