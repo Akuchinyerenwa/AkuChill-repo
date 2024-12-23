@@ -1198,6 +1198,10 @@ input[type = submit]:hover, input[type = reset]:hover {
   box-shadow: 0 1px 4px #712626;
 }
 
+.toDoList-main input[type = button]:active {
+  transform: scaleX(0.98);
+}
+
 .toDoList-main ul {
   min-height: 45vh;
   background-color: rgb(145, 163, 182);
